@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+/* new styles */
+.app-widget-container {
+  border: 1px solid white; /* Properly defines border style, width, and color */
+  padding: 10px; /* Add some spacing for better visuals */
+  text-align: center; /* Center-align the content */
+}

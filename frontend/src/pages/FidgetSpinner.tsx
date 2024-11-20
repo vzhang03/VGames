@@ -4,7 +4,7 @@ import "../styles/FidgetSpinner.scss";
 const FidgetSpinner = () => {
   const [rotateSpeed, setRotateSpeed] = useState(0.85);
 
-  const handleSpeedChange = (e) => {
+  const handleSpeedChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setRotateSpeed(parseFloat(e.target.value));
   };
 
