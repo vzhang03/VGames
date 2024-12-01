@@ -4,9 +4,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import GameWidget from './components/GameWidget';
-import GameLanding from './components/GameLanding';
-
+import GameLanding from './pages/GameLanding';
+import PlayGame from './pages/PlayGame';
 
 const router = createBrowserRouter([
   {
@@ -14,14 +13,14 @@ const router = createBrowserRouter([
     element: <Home />,
     // errorElement: <ErrorPage />,
   },
-  // {
-  //   path: "/courses",
-  //   element: <GameWidget appName='app1' appDescription='appDescription'/>
-  // },
   {
     path: "/game/:gameId",
     element: <GameLanding />
-  }
+  },
+  {
+    path: "/game/:gameId/play",
+    element: <PlayGame />
+  },
 ]);
 
 function App() {
