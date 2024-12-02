@@ -7,19 +7,21 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({  }) => {
   return (
     <div>
-      <h1>This is the home screen</h1>
+      <h1>VGames</h1>
 
-      {Object.keys(gameData).map((gameId) => {
-        const game = gameData[gameId];
-        return (
-          <GameWidget 
-            key={gameId}
-            appName={game.name} 
-            navigationId={gameId} 
-            appDescription={game.description} 
-          />
-        );
-      })}
+      <div className="widget-carousel">
+        {Object.keys(gameData).map((gameId) => {
+          const game = gameData[gameId];
+          return (
+            <GameWidget 
+              key={gameId}
+              appName={game.name} 
+              navigationId={gameId} 
+              appDescription={game.description} 
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

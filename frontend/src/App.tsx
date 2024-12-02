@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import GameLanding from './pages/GameLanding';
 import PlayGame from './pages/PlayGame';
+import Navbar from './components/Navbar';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       {/* <Home /> */}
+      <Navbar />
       <RouterProvider router={router}/>
     </>
   );

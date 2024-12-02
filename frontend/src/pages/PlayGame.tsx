@@ -1,5 +1,5 @@
 
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import GuessTheCourse from "../games/GuessTheCourse";
 import QuestionOfDay from "../games/QuestionOfDay";
 

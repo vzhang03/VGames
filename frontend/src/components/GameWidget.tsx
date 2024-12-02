@@ -18,10 +18,15 @@ const GameWidget: React.FC<GameWidgetProps> = ({ appName, navigationId, appDescr
   };
 
   return (
-    <div className="app-widget-container">
-      <h1>{appName}</h1>
-      <p>{appDescription}</p>
-      <button onClick={handlePlayClick}>Play!</button>
+    <div className="game-widget-container">
+      <div className="game-widget-header">
+        <h2>{appName}</h2>
+        <h1>ICON</h1>
+      </div>
+      <div className="game-widget-footer">
+        <p className="game-widget-description">{appDescription}</p>
+        <button className="game-widget-button" onClick={handlePlayClick}>Play!</button>
+      </div>
     </div>
   );
 };
