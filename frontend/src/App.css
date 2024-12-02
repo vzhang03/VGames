@@ -58,9 +58,15 @@
   padding: 10px; /* Add some spacing for better visuals */
   text-align: center; /* Center-align the content */
   width: 350px;
+  max-height: 400px;
   height: 400px;
-  justify-content: space-between;
+}
 
+.game-widget-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .game-widget-header {
@@ -71,11 +77,12 @@
 }
 
 .game-widget-footer {
-  padding-top: 75px;
+  /* padding-top: 75px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 .game-widget-description {
