@@ -5,20 +5,19 @@ interface GameWidgetProps {
   appName: string;
   navigationId: string, 
   appDescription: string;
+  dark: boolean;
 }
 
-const GameWidget: React.FC<GameWidgetProps> = ({ appName, navigationId, appDescription }) => {
+const GameWidget: React.FC<GameWidgetProps> = ({ appName, navigationId, appDescription, dark }) => {
   const navigate = useNavigate();
 
   const handlePlayClick = () => {
-    // Navigate to the game's landing page using appName as the gameId
     console.log(`navigating to: /game/${navigationId}`);
     navigate(`/game/${navigationId}`);
-    // navigate(`/game/${appName.toLowerCase().replace(/\s+/g, '-')}`);
   };
 
   return (
-    <div className="game-widget-container">
+    <div className={`game-widget-container ${dark ? 'game-widget-container-dark' : 'game-widget-container-light'}`}>
       <div className="game-widget-content">
         <div className="game-widget-header">
           <h2>{appName}</h2>
@@ -32,5 +31,4 @@ const GameWidget: React.FC<GameWidgetProps> = ({ appName, navigationId, appDescr
     </div>
   );
 };
-
 export default GameWidget;
