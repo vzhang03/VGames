@@ -121,6 +121,10 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle drop shadow */
 }
 
+.navbar-title {
+  font-weight: 350;
+}
+
 .nav-icon-container {
   cursor: pointer;
 }
@@ -128,3 +132,29 @@
 .nav-icon {
   filter: brightness(0) invert(1); /* Makes the SVG white */
 }
+
+/* landing */
+.landing-page {
+  background-color: white; /* Change background here */
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  padding: 20px;
+}
+
+.landing-title {
+  color: black;
+  padding: 50px;
+}
+
+.landing-description {
+  color: black;
+}
+
+.landing-instruction {
+  color: black;
+}
+
+.landing-date {
+  color: black;
+}
+

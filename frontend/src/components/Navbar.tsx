@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
           className='nav-icon'
         />
       </div>
-      <h1>V-GAMES</h1>
+      <h1 className='navbar-title'>V-GAMES</h1>
       <div 
         onClick={() => {navigate("/")}} 
         className="nav-icon-container"
