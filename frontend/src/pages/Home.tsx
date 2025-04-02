@@ -7,8 +7,6 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({  }) => {
   return (
     <div>
-      <h1>VGames</h1>
-
       <div className="widget-carousel">
       {Object.keys(gameData).map((gameId, index) => {
         const game = gameData[gameId];

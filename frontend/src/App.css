@@ -103,3 +103,28 @@
   width: 90%;
   justify-content: center;
 }
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #951829; /* Fixed the background color with # prefix */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle drop shadow */
+}
+
+.nav-icon-container {
+  cursor: pointer;
+}
+
+.nav-icon {
+  filter: brightness(0) invert(1); /* Makes the SVG white */
+}
