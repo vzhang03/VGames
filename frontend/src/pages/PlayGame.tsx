@@ -15,6 +15,7 @@ const PlayGame = () => {
     case "question-of-the-day":
       gameComponent = <QuestionOfDay />
       break;
+    
   }
 
   return (
